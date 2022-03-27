@@ -1,0 +1,33 @@
+.navbar
+    display: inline-flex
+
+.main
+    z-index: 20
+    overflow: hidden
+    position: fixed
+    left: 50%
+    transform: translateX(-50%)
+    bottom: 1%
+    width: 280px
+    height: 50px
+    // border: solid var(--btn)
+    border-radius: 100px
+    backdrop-filter: blur(10px)
+    background-color: rgba(32, 32, 32, 0.522)
+    display: flex
+    justify-content: space-evenly
+    align-items: center
+
+.main a:hover
+    color: var(--text-p)
+    background-color: rgba(32, 32, 32, 0.712)
+    border-radius: 100%
+.main a.active
+    border-radius: 100%
+    background-color: rgba(0, 0, 0, 0.5)
+    color: var(--text-p )
+svg
+    padding: 0.3px
+    width: 26px
+    height: 26px
+    margin: 10px

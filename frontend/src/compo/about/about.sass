@@ -1,0 +1,99 @@
+.about
+    background-color: #100f0f
+    height: max-content 
+    margin: 4%
+    border-radius: 4rem
+    border: solid var(--text-h)
+.about__container
+    display: grid
+    align-items: center
+    grid-template-columns: 35% 50%
+    gap: 15%
+
+.about__me
+    width: 100%
+    aspect-ratio: 1/1
+    background: linear-gradient(var(--text-hs),#00ffddd7)
+    border-radius: 2rem
+    display: grid
+    place-items: center
+    align-items: end
+    margin-top: 2rem
+    margin-bottom: 3rem
+
+
+
+.about__me-img
+    border-radius: 2rem
+    overflow: hidden
+    transform: rotate(15deg)
+    transition: all 400ms
+.about__me-img:hover
+    transform: rotate(0deg)
+
+.about__cards
+    display: grid
+    grid-template-columns: repeat(3,1fr)
+    gap: 1.5rem 
+
+.about__card
+    background: rgba(6, 72, 66, 0.781) 
+    border: 1px solid transparent
+    border-radius: 1rem
+    padding: 2rem
+    text-align: center
+.about__card:hover
+    border: 1px solid var(--text-h)
+    background: rgba(6, 72, 66, 0.24) 
+    transition: all 400ms
+.about__card h5 
+    font-size: 0.95rem
+.about__card small
+    font-size: 0.7rem
+.about__content p
+    margin: 2rem 0 1rem 0
+
+.btn2 
+    color: var(--text-h)
+    background-color: #2fa5ff77
+    border-color: #2FA4FF
+    margin: 1rem
+    border-radius: 10px
+
+.cen1
+    text-align: center
+    margin-top: 4%
+.cen
+    text-align: center
+    margin: 1%
+    margin-bottom: 2%
+
+
+//media q
+//for tab
+@media screen and (max-width: 1024px)
+    .about__container
+        grid-template-columns: 1fr
+        gap: 0
+    .about__me 
+        width: 50%
+        margin: 2rem auto 4rem
+    .about__content p 
+        margin: 1rem 0 1rem
+
+
+
+// for phone
+@media screen and (max-width: 600px)
+    .about__me 
+        width: 65%
+        margin: 0 auto 3rem
+    .about__cards
+        grid-template-columns: 1fr 1fr
+        gap: 1rem
+    .about__content
+        text-align: center
+    .about__content p 
+        margin: 1.5rem 
+    .hid_m
+        display: none

@@ -1,0 +1,63 @@
+.experience
+    background-color: #100f0f7a
+    height: max-content
+    margin: 4%
+    border-radius: 4rem
+    border: solid #00ffdd5e
+.experience__container
+    padding-bottom: 10vh
+    display: grid
+    grid-template-columns: 1fr 1fr
+    gap: 2rem
+.experience__container > div
+    background: #100f0fe7
+    padding: 2.4rem 5rem
+    border: 1px solid #00ffdd
+    border-radius: 2rem
+    
+.experience__container > div:hover
+    background: #100f0f00
+    transition: all 500ms
+
+.experience__container > div > h4
+    text-align:  center
+    margin-bottom: 2rem
+    
+.experience__content
+    display: grid
+    grid-template-columns: 1fr 1fr
+    row-gap : 2rem
+
+.experience__details
+    display: flex
+    gap: 1rem
+.experience__details > div > h4
+    font-size: 100%
+
+//media q
+//for tab
+@media screen and (max-width: 1024px)
+    .experience
+        border: solid #00ffdd00
+    .experience__container
+        grid-template-columns: 1fr
+
+    .experience__container > div
+        width: 80%
+        padding: 2rem
+        margin: 0 auto
+    .experience__content
+        padding: 1rem
+
+// for phone
+@media screen and (max-width: 600px)
+    .experience
+        border: solid #00ffdd00
+    .experience__container
+        gap : 1rem
+    
+    .experience__container > div
+        width: 100%
+        padding: 2rem 1rem
+    .experience__content
+        grid-template-columns: 1fr
