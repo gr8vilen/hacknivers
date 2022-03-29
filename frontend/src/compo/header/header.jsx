@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState , useEffect} from 'react';
 import './header.css';
-import sanityClient  from '../../client'
+import { urlFor, client }  from '../../client'
 import Imgme from './imgme/imgme'
 import {AiFillGithub} from 'react-icons/ai'
 import {BsInstagram , BsFillArrowUpRightSquareFill} from 'react-icons/bs'
@@ -11,7 +11,7 @@ const Header = () => {
   const [Links, setLinks] = useState("#");
 
   useEffect(() => {
-    sanityClient
+    client
       .fetch('*[_type == "links"]')
       .then(
         (data) => {

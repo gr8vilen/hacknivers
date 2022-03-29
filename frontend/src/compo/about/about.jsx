@@ -3,7 +3,7 @@ import { useState , useEffect} from 'react';
 import { Link } from 'react-router-dom'
 import {FaAward} from 'react-icons/fa'
 import {FiUsers} from 'react-icons/fi'
-import sanityClient  from '../../client'
+import { urlFor, client }  from '../../client'
 
 import {VscFolderLibrary} from 'react-icons/vsc'
 import './about.sass'
@@ -12,7 +12,7 @@ const About = () => {
   const [imgLinks, setImgLinks] = useState(null);
 
   useEffect(() => {
-    sanityClient
+    client
       .fetch('*[_type == "header"]{imageurl{asset->{url}}}')
       .then(
         (data) => {

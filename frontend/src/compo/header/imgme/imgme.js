@@ -1,6 +1,6 @@
 import React from 'react'
 import './imgme.sass'
-import sanityClient  from '../../../client'
+import { urlFor, client }  from '../../../client'
 import { useEffect , useState } from 'react'
 
 const Imgme= ()=>{
@@ -9,7 +9,7 @@ const Imgme= ()=>{
   const [mainImg, setHeader] = useState(null);
 
   useEffect(() => {
-    sanityClient
+    client
       .fetch('*[_type == "header"]{imageurl{asset->{url}}}')
       .then(
         (data) => {

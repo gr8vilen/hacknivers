@@ -1,9 +1,9 @@
 import React from 'react'
+
 import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from 'react-router-dom'
 import Header from './header/header'
 import About from './about/about'
