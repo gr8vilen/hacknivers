@@ -6,6 +6,8 @@ import schemaTypes from 'all:part:@sanity/base/schema-type'
 import header from './header'
 import links from './links'
 import projects from './projects'
+import about from './about'
+import contact from './contact'
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -16,6 +18,8 @@ export default createSchema({
     /* Your types here! */
     header,
     links,
-    projects
+    projects,
+    about,
+    contact
   ]),
 })

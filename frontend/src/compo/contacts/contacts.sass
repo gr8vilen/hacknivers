@@ -1,0 +1,60 @@
+.contact__container
+    width: 58%
+    display:  grid
+    grid-template-columns: 30% 50%
+    gap: 12%
+    margin-bottom: 5%
+    
+.contact__options
+    display: flex
+    flex-direction: column
+    gap: 1.2rem
+
+.contact__option
+    text-align: center
+    backdrop-filter: blur(10px)
+    background-color: rgba(32, 32, 32, 0.522)
+    padding: 1.2rem
+    border: 1px solid #2FA4FF
+    transition: all 400ms
+    border-radius: 20px
+
+.contact__option:hover
+    background: rgb(32, 32, 32)
+    backdrop-filter: blur(0px)
+    border: 1px solid #00d9ff
+
+
+.contact__option a
+    width: -webkit-fill-available
+
+form
+    display: flex
+    flex-direction: column
+    gap: 1.2rem
+
+input,textarea
+    width: 100%
+    padding: 1.5rem
+    border-radius: 0.5rem
+    background: rgba(0, 0, 0, 0.315)
+    backdrop-filter: blur(10px)
+    border: 2px solid #00d9ff
+    resize: none
+    color: #e8f0fe
+
+
+
+
+//media q
+//for tab
+@media screen and (max-width: 1024px)
+    .contact__container
+        grid-template-columns: 1fr
+        gap: 2rem
+
+
+// for phone
+@media screen and (max-width: 600px)
+    .contact__container
+        width: 85%

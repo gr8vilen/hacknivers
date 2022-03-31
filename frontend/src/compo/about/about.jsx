@@ -20,6 +20,19 @@ const About = () => {
         })
   },[]);
   
+  const[aboutdata , setaboutdata ] = useState([])
+
+  useEffect(() => {
+    if(aboutdata == []){
+      console.log('getting data')
+    }else{
+      client
+        .fetch('*[_type == "about"]').then((data)=>{setaboutdata(data[0])})
+    }
+  }, [])
+  
+  // console.log(aboutdata)
+
   return (
     <>
       <div className="about" id='about'>
@@ -37,21 +50,21 @@ const About = () => {
            <article className="about__card">
              <FaAward className='about__icon'/>
              <h5>experience</h5>
-              <small>1+ years</small>
+              <small>{aboutdata.experience}</small>
            </article>
            <article className="about__card">
              <VscFolderLibrary className='about__icon'/>
              <h5>projects</h5>
-              <small>20+</small>
+              <small>{aboutdata.projects}</small>
            </article>
            <article className="about__card hid_m">
              <FiUsers className='about__icon'/>
              <h5>clints</h5>
-              <small>10+</small>
+              <small>{aboutdata.clints}</small>
            </article>
            </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus excepturi accusamus maiores quod incidunt? Dolor, sapiente, non expedita id necessitatibus tenetur delectus, vel soluta eligendi repellendus saepe omnis consequatur placeat!
+            {aboutdata.name}
           </p>
 
           <Link to="/p/aboutme">

@@ -9,7 +9,7 @@ import Header from './header/header'
 import About from './about/about'
 import Achievement from './achievement/achievement'
 import Contacts from './contacts/contacts'
-import Futter from './futter/futter'
+
 import Navbar from './nav/navbar'
 import Background from './background/background'
 import Projects from './projects/projects'
@@ -32,7 +32,7 @@ export const app = () => {
         } />
         <Route path='/p/aboutme' element={Aboutme}/>
       </Routes>
-      <Futter/>
+      
 
     </Router>
   )
