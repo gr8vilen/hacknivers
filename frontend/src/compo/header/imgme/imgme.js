@@ -20,8 +20,6 @@ const Imgme= ()=>{
   return (
 
     <div>
-        <button type="button" className="btn btn-outline-primary btn1">Get CV</button>
-        <button type="button" className="btn btn-primary btn2">let's talk</button>
         <img src={mainImg} className='me' alt="loding" />
         
     </div>

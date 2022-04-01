@@ -26,6 +26,14 @@ const Header = () => {
         <h1 className='mar0 typing-demo'>Dhiraj kumar </h1>
       </div>
       <p className='mar0 ptop1'>Fullstack developer</p>
+      <a href={Links[0].cv_url}>
+        <button type="button" className="btn btn-outline-primary btn1">Get CV</button>
+      </a>
+
+        <a href="#contacts">
+            <button type="button" className="btn btn-primary btn2">let's talk</button>
+        </a>
+
       <div className="sa">
         <a href={Links[0].github_url}><AiFillGithub  className='a__headder'/></a>
         <a href={Links[0].inst_url}><BsInstagram className='a__headder'/></a>

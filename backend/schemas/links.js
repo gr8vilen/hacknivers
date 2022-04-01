@@ -13,6 +13,11 @@ export default{
             title:'Github_url',
             type:'string',
         },
+        {
+            name:'cv_url',
+            title:'Cv_url',
+            type:'string',
+        },
   ]
 
 }
