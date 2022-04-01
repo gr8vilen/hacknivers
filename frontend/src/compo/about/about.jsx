@@ -68,9 +68,6 @@ const About = () => {
           </p>
 
           <Link to="/p/aboutme">
-          <button  className='btn btn-outline-primary btn1'>
-          know more..
-          </button>
           </Link>
          </div>
       </div>
