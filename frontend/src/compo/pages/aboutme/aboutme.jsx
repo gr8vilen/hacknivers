@@ -1,9 +1,13 @@
 import React from 'react'
 
-function aboutme() {
+function Aboutme() {
   return (
-    <div>aboutme</div>
+    <div>
+      <h1>
+      Aboutme
+      </h1>
+    </div>
   )
 }
 
-export default aboutme
+export default Aboutme

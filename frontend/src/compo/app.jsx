@@ -30,7 +30,11 @@ export const app = () => {
             <Navbar/>
           </>
         } />
-        <Route path='/p/aboutme' element={Aboutme}/>
+        <Route path='/p/aboutme' element={
+          <>
+            <Aboutme/>
+          </>
+        }/>
       </Routes>
       
 

@@ -5,6 +5,7 @@ import { urlFor, client }  from '../../client'
 import Imgme from './imgme/imgme'
 import {AiFillGithub} from 'react-icons/ai'
 import {BsInstagram , BsFillArrowUpRightSquareFill} from 'react-icons/bs'
+import {Link} from "react-router-dom" 
 
 
 const Header = () => {
@@ -26,9 +27,9 @@ const Header = () => {
         <h1 className='mar0 typing-demo'>Dhiraj kumar </h1>
       </div>
       <p className='mar0 ptop1'>Fullstack developer</p>
-      <a href={Links[0].cv_url}>
-        <button type="button" className="btn btn-outline-primary btn1">Get CV</button>
-      </a>
+        <Link to="/p/aboutme">
+          <button type="button" className="btn btn-outline-primary btn1">Know more..</button>
+        </Link>
 
         <a href="#contacts">
             <button type="button" className="btn btn-primary btn2">let's talk</button>
