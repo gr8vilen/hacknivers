@@ -11,11 +11,11 @@ const Navbar = () => {
   return (
     <div className='navbar' >
       <div className='main'>
-        <a href="#about"  onClick={()=> setActiveNav('#about')} className={ActiveNav === '#about' ? 'active' : ''}><AiOutlineUser /></a>
-        <a href="#experience"  onClick={()=> setActiveNav('#experience')} className={ActiveNav === '#experience' ? 'active' : ''}><BiBook /></a>
-        <a href="#" onClick={()=> setActiveNav('#')} className={ActiveNav === '#' ? 'active' : ''}><AiOutlineHome /></a>
-        <a href="#projects"  onClick={()=> setActiveNav('#projects')} className={ActiveNav === '#projects' ? 'active' : ''}><AiOutlineProject /></a>
-        <a href="#contacts" onClick={()=> setActiveNav('#contacts')} className={ActiveNav === '#contacts' ? 'active' : ''}><BiMessageSquareDetail /></a>
+        <a href="#about"  onClick={()=> setActiveNav('#about')} className={ActiveNav === '#about' ? 'active' : ''} ><AiOutlineUser /></a>
+        <a href="#experience"  onClick={()=> setActiveNav('#experience')} className={ActiveNav === '#experience' ? 'active' : ''} ><BiBook /></a>
+        <a href="#" onClick={()=> setActiveNav('#')} className={ActiveNav === '#' ? 'active' : ''} ><AiOutlineHome /></a>
+        <a href="#projects"  onClick={()=> setActiveNav('#projects')} className={ActiveNav === '#projects' ? 'active' : ''} ><AiOutlineProject /></a>
+        <a href="#contacts" onClick={()=> setActiveNav('#contacts')} className={ActiveNav === '#contacts' ? 'active' : ''} ><BiMessageSquareDetail /></a>
       </div>
     </div>
   )

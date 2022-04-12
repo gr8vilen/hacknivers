@@ -1,11 +1,13 @@
 import React from 'react'
 import Header from './header/header'
-import Navbar1 from './nav1'
+import Navbar from '../../nav/navbar'
+import Exp from './exp/exp'
 function Aboutme() {
   return (
     <div>
       <Header/>
-      <Navbar1/>
+      <Exp/>
+      <Navbar/>
     </div>
   )
 }
