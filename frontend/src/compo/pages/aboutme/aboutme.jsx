@@ -8,7 +8,7 @@ function Aboutme() {
     <div>
       <Header/>
       <Exp/>
-      <cirt/>
+      <Cirt/>
       <Navbar/>
     </div>
   )

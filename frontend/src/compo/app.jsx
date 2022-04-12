@@ -14,6 +14,7 @@ import Navbar from './nav/navbar'
 import Background from './background/background'
 import Projects from './projects/projects'
 import Aboutme from './pages/aboutme/aboutme'
+import Critspage from './pages/aboutme/cirt/critspage'
 
 export const app = () => {
   return (
@@ -33,6 +34,12 @@ export const app = () => {
         <Route path='/p/aboutme' element={
           <>
             <Aboutme/>
+          </>
+        }/>
+        
+        <Route path='/p/aboutme/cirt' element={
+          <>
+            <Critspage/>
           </>
         }/>
       </Routes>
