@@ -9,6 +9,7 @@ import projects from './projects'
 import about from './about'
 import contact from './contact'
 import aboutpage from './aboutpage'
+import cirts from './cirts'
 // Then we give our schema to the builder and provide the result to Sanity
 export default createSchema({
   // We name our schema
@@ -22,6 +23,7 @@ export default createSchema({
     projects,
     about,
     contact,
-    aboutpage
+    aboutpage,
+    cirts
   ]),
 })
