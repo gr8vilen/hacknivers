@@ -13,8 +13,6 @@ function Cirt() {
     });
   }, []);
 
-  console.log(cirtdata);
-
   return (
     <div id="projects">
       <h1 style={{ textAlign: "center" }}>Certificates</h1>

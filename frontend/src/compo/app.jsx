@@ -1,52 +1,22 @@
-import React from 'react'
+import React from "react";
 
 import {
   BrowserRouter as Router,
-  Routes,
-  Route,
-} from 'react-router-dom'
-import Header from './header/header'
-import About from './about/about'
-import Achievement from './achievement/achievement'
-import Contacts from './contacts/contacts'
 
-import Navbar from './nav/navbar'
-import Background from './background/background'
-import Projects from './projects/projects'
-import Aboutme from './pages/aboutme/aboutme'
-import Critspage from './pages/aboutme/cirt/critspage'
+} from "react-router-dom";
 
-export const app = () => {
+import Background from "./background/background";
+
+import Animrouts from "./anim-routs";
+
+export const App = () => {
   return (
     <Router>
-      <Background/> 
-      <Routes>
-        <Route path="/" element={
-          <>
-            <Header />
-            <About />
-            <Achievement />
-            <Projects />
-            <Contacts />
-            <Navbar/>
-          </>
-        } />
-        <Route path='/p/aboutme' element={
-          <>
-            <Aboutme/>
-          </>
-        }/>
-        
-        <Route path='/p/aboutme/cirt' element={
-          <>
-            <Critspage/>
-          </>
-        }/>
-      </Routes>
-      
+      <Background />
 
+      <Animrouts />
     </Router>
-  )
-}
+  );
+};
 
-export default app
+export default App;
